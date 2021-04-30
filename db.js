@@ -14,7 +14,7 @@ port: process.env.DB_PORT
 
 )
 
-const prod = new Sequelize (
+module.exports = new Sequelize (
 
     {
 connectionString: "postgres://sgcwvpaokvtzwl:d6882a02751e9fe70bfd4e1c83417a3521e547d33d8cea5cbf79886ee349263b@ec2-52-21-252-142.compute-1.amazonaws.com:5432/d8a936cciknf3v"
@@ -23,5 +23,5 @@ connectionString: "postgres://sgcwvpaokvtzwl:d6882a02751e9fe70bfd4e1c83417a3521e
 )
 
 
-module.exports = process.env.NODE_ENV === 'development' ? dev : prod
+
 
