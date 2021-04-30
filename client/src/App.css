@@ -1,0 +1,122 @@
+html, h1 {
+    background-color: #F1F1EF;
+}
+
+
+#root {
+    background-color: #F1F1EF;
+}
+
+.bg-white {
+    background-color: #F7F7F7 !important
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #1B2021;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .nav-link {
+    
+    text-decoration: none;
+  
+    
+    display: inline-block;
+    
+    position: relative;
+
+  }
+
+  .list-group-item {
+    background-color:#F1F1EF ;
+    border: none;
+      }
+    
+      .list-group-item.active {
+        
+        font-weight: bold;
+        color:black;
+        background-color:#F1F1EF;
+          }
+.vegan-card {
+    background-color:#F1F1EF;
+    border: none
+}
+
+.card-product {
+  background-color: #F7F7F7;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px;
+  margin-top: -2rem;
+ margin:auto
+}
+
+.card-product {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.shop-button {
+  border: none;
+}
+
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #1B2021;
+  background-color:#F7F7F7;
+  border-color: #F7F7F7;
+}
+
+.page-item .page-link {
+  z-index: 3;
+  color: #1B2021;
+  background-color:#F1F1EF;
+  border-color: #F7F7F7;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) { 
+
+.logo-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 0.5rem;
+  margin-bottom: -2rem;
+  
+}
+
+.card-product {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+ }
+
+ .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F7F7F7;
+}
