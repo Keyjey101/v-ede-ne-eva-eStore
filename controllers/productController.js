@@ -97,13 +97,13 @@ class ProductController {
         where: { id },
       });
 
-      let { name, value, typeId, veganId, info } = req.body;
+      let { name, value, typeId, veganId, info, raiting } = req.body;
       
       const { img } = req.files;
       let fileName = product.img;
 
       const newProduct = await Product.update(
-        { name, value, typeId, veganId, img: fileName },
+        { name, value, typeId, veganId, img: fileName, raiting },
         {
           where: { id },
         }
