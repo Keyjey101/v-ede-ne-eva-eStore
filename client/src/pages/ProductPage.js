@@ -174,7 +174,7 @@ show={visible}
             <Table striped hover>
               <thead>
                 <tr>
-                  <th>Характерирстики продукта</th>
+                  <th>Характеристики продукта</th>
                 </tr>
               </thead>
               <tbody>

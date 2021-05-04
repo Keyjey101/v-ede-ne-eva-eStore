@@ -39,8 +39,8 @@ name: {type: DataTypes.STRING, unique: true, allowNull: false},
 const ProductInfo = sequelize.define('product_info',
     {
 id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
-title: {type: DataTypes.STRING, unique: true, allowNull: false},
-content: {type: DataTypes.STRING, unique: true, allowNull: false},
+title: {type: DataTypes.STRING, allowNull: false},
+content: {type: DataTypes.STRING, allowNull: false},
     }
 )
 

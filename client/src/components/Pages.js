@@ -16,7 +16,7 @@ const Pages = observer(() => {
 
 useEffect(() => {
     product.setPage(1)
-    console.log('this is use EFFECT FROM PAGES')
+    
 },[product.selectedType, product.selectedVegan, product])
 
 

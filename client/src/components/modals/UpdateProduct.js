@@ -84,7 +84,7 @@ const addProduct = () => {
 
         <Dropdown>
             <Dropdown.Toggle variant="secondary" className="mb-3">
-              {nameToChange || "Выберите продукт для удаления"}
+              {nameToChange || "Выберите продукт для обновления"}
             </Dropdown.Toggle>
             <Dropdown.Menu>
               {product.products.map((x) => (

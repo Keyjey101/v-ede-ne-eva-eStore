@@ -42,7 +42,7 @@ const addProduct = () => {
         formData.append('veganId', product.selectedVegan.id)
         formData.append('typeId', product.selectedType.id)
         formData.append('info', JSON.stringify(info))
-        console.log('this is form data', formData)
+        
         createProduct(formData).then(data => onHide())
     }
 
