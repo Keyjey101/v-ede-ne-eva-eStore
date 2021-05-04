@@ -26,8 +26,8 @@ const start = async () => {
   
     try {
 
-await sequelize.authenticate()
-await sequelize.sync()
+//await sequelize.authenticate()
+//await sequelize.sync()
 
 
 
