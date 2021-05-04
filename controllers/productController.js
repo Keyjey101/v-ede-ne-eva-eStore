@@ -148,11 +148,14 @@ const delInfo = ProductInfo.destroy(
       });
 
       //deleting image
-
+try {
       const deleteImg = fs.unlinkSync(
         path.resolve(__dirname, "../client/build", product.img)
       );
-
+      }
+      catch(e){
+        console.log(e)
+      }
       //deleting product data
       const deleteProduct = await Product.destroy({ where: { id } });
 
@@ -172,8 +175,12 @@ const delInfo = ProductInfo.destroy(
 
       const images = await Product.findAll({where: {}})
 //deleting images
+try {
 images.map(x => fs.unlinkSync(path.resolve(__dirname, "../client/build", x.img)))
-
+}
+catch(e){
+  console.log(e)
+}
       const deleteProducts = await Product.destroy({ where: {} });
 
       const delInfo = ProductInfo.destroy(
